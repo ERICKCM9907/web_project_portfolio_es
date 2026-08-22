@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/ArchivoBlack-Regular.woff2)
+      format("woff2"),
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/ArchivoBlack-Regular.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-Regular.woff2)
+      format("woff2"),
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-Regular.woff)
+      format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-SemiBold.woff2)
+      format("woff2"),
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-SemiBold.woff)
+      format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-Bold.woff2)
+      format("woff2"),
+    url(../PORTAFOLIO/PORTAFOLIO/FONTS/fonts/fonts/OpenSans-Bold.woff)
+      format("woff");
+  font-weight: bold;
+}
+
+:root {
+  --font-main: "open Sans", Arial, Sans-serif;
+  --font-heading: "Archivo Black", Arial, Sans-serif;
+
+  --bg-color: #0d0d11;
+  --text-color-primary: #fff;
+  --text-color-secundary: #a0a0a0;
+  --acent-color: #6d6dff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
