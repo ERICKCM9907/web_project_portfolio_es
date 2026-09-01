@@ -474,7 +474,6 @@ main {
     background-repeat: no-repeat;
   }
 
-  /* SKILLS */
   .skills {
     width: 100%;
     max-width: 100%;
@@ -530,7 +529,6 @@ main {
     object-fit: cover;
   }
 
-  /* Hacer que la imagen sea totalmente responsiva */
   .card__image {
     width: 100%;
     height: auto;
@@ -563,7 +561,7 @@ main {
     width: 300px;
     height: 300px;
     left: 234px;
-    bottom: 25px; /* Evita que desborde por la derecha */
+    bottom: 25px;
   }
 }
 
@@ -572,7 +570,7 @@ main {
 @media screen and (max-width: 320px) {
   .profile {
     display: flex;
-    flex-direction: column; /* Orden normal: Título, Texto e Imagen abajo si aplica en Figma */
+    flex-direction: column;
     align-items: center;
     padding: 0 16px;
     gap: 20px;
@@ -582,7 +580,7 @@ main {
 
   .profile__image {
     width: 100%;
-    max-width: 280px; /* O la medida exacta de tu Figma para móviles */
+    max-width: 280px;
     height: auto;
     aspect-ratio: 1/1;
     margin: 0 auto;
@@ -608,16 +606,16 @@ main {
 
   .profile__links {
     display: flex;
-    flex-direction: column; /* Alinea los 3 enlaces verticalmente */
-    align-items: flex-start; /* Mantiene las plecas ajustadas al ancho de cada texto */
-    gap: 16px; /* Espaciado uniforme entre cada enlace */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
     margin-top: 30px;
     width: 100%;
   }
 
   .profile__link {
     font-size: 16px;
-    width: fit-content; /* Garantiza que el background/pleca no se expanda al 100% */
+    width: fit-content;
     display: inline-block;
   }
 
@@ -630,7 +628,7 @@ main {
   }
 
   .skills__title {
-    font-size: 28px; /* Reduce el tamaño para que "y herramientas" quepa en la segunda línea */
+    font-size: 28px;
     line-height: 1.1;
     width: 100%;
   }
@@ -639,8 +637,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 30px 53px; /* 20px espacio vertical entre filas, 28px espacio horizontal entre iconos */
-    margin-top: 30px;
+    gap: 30px 53px;
     padding: 0;
     list-style: none;
     width: 100%;
@@ -656,7 +653,7 @@ main {
     object-fit: contain;
   }
   .projects {
-    padding: 0 16px; /* Solo 16px de margen a los lados de la pantalla */
+    padding: 0 16px;
     margin-top: 60px;
     width: 100%;
     box-sizing: border-box;
@@ -697,13 +694,12 @@ main {
   }
 
   .projects .card__content {
-    padding: 24px 20px; /* Padding interno ajustado según Figma */
+    padding: 24px 20px;
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Espacio entre título y descripción */
+    gap: 16px;
   }
 
-  /* TÍTULO Y DESCRIPCIÓN DE LA TARJETA */
   .projects .card__title {
     font-size: 20px;
     line-height: 1.2;
@@ -714,7 +710,7 @@ main {
   .projects .card__description {
     font-size: 15px;
     line-height: 1.4;
-    color: #cccccc; /* O el color gris de Figma */
+    color: #cccccc;
     margin: 0;
   }
 
@@ -723,7 +719,6 @@ main {
     gap: 5px;
   }
 
-  /* FOOTER */
   .footer,
   .footer__content {
     display: flex;
@@ -752,6 +747,6 @@ main {
     width: 300px;
     height: 300px;
     left: 10px;
-    bottom: 9px; /* Evita que desborde por la derecha */
+    bottom: 9px;
   }
 }
