@@ -32,7 +32,7 @@
 }
 
 :root {
-  --font-main: "open Sans", Arial, Sans-serif;
+  --font-main: "Open Sans", Arial, Sans-serif;
   --font-heading: "Archivo Black", Arial, Sans-serif;
 
   --bg-color: #0d0d11;
@@ -58,10 +58,9 @@
   position: relative;
   overflow-x: hidden;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
-  margin: 0;
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
@@ -113,7 +112,7 @@ main {
   max-width: 793px;
   margin-top: 89px;
   margin-bottom: 0;
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -124,7 +123,9 @@ main {
 .profile__subtitle {
   max-width: 793px;
   margin-top: 15px;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -135,7 +136,9 @@ main {
 .profile__description {
   margin-top: 30px;
   max-width: 793px;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -158,7 +161,9 @@ main {
 }
 
 .profile__link {
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -185,7 +190,7 @@ main {
 }
 
 .skills__title {
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -216,7 +221,7 @@ main {
 .projects__title {
   margin-top: 0;
   margin-left: 0;
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -275,7 +280,9 @@ main {
 
 .card__title {
   padding: 0;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -286,7 +293,9 @@ main {
   margin-top: 20px;
   padding: 0;
   max-width: 530px;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -303,7 +312,9 @@ main {
 
 .link__Demo {
   display: flex;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -320,7 +331,9 @@ main {
 
 .link__github {
   display: flex;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -349,7 +362,7 @@ main {
 }
 
 .footer__title {
-  font-family: "Archivo Black";
+  font-family: "Archivo Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -361,7 +374,9 @@ main {
 
 .footer__email {
   margin-top: 20px;
-  font-family: "Open Sans";
+  font-family:
+    "Open Sans" Arial,
+    sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -386,6 +401,8 @@ main {
 .footer__social-link:hover {
   opacity: 50%;
 }
+
+/*768PX*/
 
 @media screen and (max-width: 768px) {
   .page,
@@ -482,7 +499,6 @@ main {
     width: 100%;
   }
 
-  /* PROJECTS */
   .projects {
     width: 100%;
     max-width: 100%;
@@ -496,23 +512,28 @@ main {
     max-width: 100%;
   }
 
-  /* Alinear tarjetas verticalmente a 1 columna */
-  .project__card {
+  .projects .project__card {
     display: flex;
-    flex-direction: column; /* Alinea imagen y contenido uno debajo del otro */
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     margin: 30px auto 0 auto;
     box-sizing: border-box;
   }
 
-  /* Liberar las medidas fijas de 590px */
-  .card,
-  .card__image-container,
-  .card__content {
-    width: 100% !important;
-    max-width: 100% !important;
+  .projects .card,
+  .projects .card__image-container,
+  .projects .card__content {
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
+  }
+
+  .projects .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   /* Hacer que la imagen sea totalmente responsiva */
@@ -548,7 +569,195 @@ main {
     width: 300px;
     height: 300px;
     left: 234px;
-    right: 234px;
     bottom: 25px; /* Evita que desborde por la derecha */
+  }
+}
+
+/*320PX*/
+
+@media screen and (max-width: 320px) {
+  .profile {
+    display: flex;
+    flex-direction: column; /* Orden normal: Título, Texto e Imagen abajo si aplica en Figma */
+    align-items: center;
+    padding: 0 16px;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .profile__image {
+    width: 100%;
+    max-width: 280px; /* O la medida exacta de tu Figma para móviles */
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  }
+
+  .profile__info {
+    max-width: 280px;
+  }
+
+  .profile__title {
+    max-width: 280px;
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .profile__subtitle {
+    max-width: 280px;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.38;
+  }
+
+  .profile__links {
+    display: flex;
+    flex-direction: column; /* Alinea los 3 enlaces verticalmente */
+    align-items: flex-start; /* Mantiene las plecas ajustadas al ancho de cada texto */
+    gap: 16px; /* Espaciado uniforme entre cada enlace */
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .profile__link {
+    font-size: 16px;
+    width: fit-content; /* Garantiza que el background/pleca no se expanda al 100% */
+    display: inline-block;
+  }
+
+  .skills {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    margin-top: 60px;
+    box-sizing: border-box;
+  }
+
+  .skills__title {
+    font-size: 28px; /* Reduce el tamaño para que "y herramientas" quepa en la segunda línea */
+    line-height: 1.1;
+    width: 100%;
+  }
+
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px 53px; /* 20px espacio vertical entre filas, 28px espacio horizontal entre iconos */
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+
+  .skills__item {
+    width: 30px;
+  }
+
+  .skills__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .projects {
+    padding: 0 16px; /* Solo 16px de margen a los lados de la pantalla */
+    margin-top: 60px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .projects__title {
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .projects .project__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .projects .card__image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .projects .card__content {
+    padding: 24px 20px; /* Padding interno ajustado según Figma */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacio entre título y descripción */
+  }
+
+  /* TÍTULO Y DESCRIPCIÓN DE LA TARJETA */
+  .projects .card__title {
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .projects .card__description {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #cccccc; /* O el color gris de Figma */
+    margin: 0;
+  }
+
+  .card__skill {
+    width: 20px;
+    gap: 5px;
+  }
+
+  /* FOOTER */
+  .footer,
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 60px auto 60px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .footer__socials {
+    gap: 40px;
+  }
+
+  .gradient-top {
+    width: 300px;
+    height: 300px;
+    right: 10px;
+    top: 10px;
+  }
+
+  .gradient-bottom {
+    width: 300px;
+    height: 300px;
+    left: 10px;
+    bottom: 9px; /* Evita que desborde por la derecha */
   }
 }
