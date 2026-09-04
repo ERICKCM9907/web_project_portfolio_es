@@ -30,13 +30,13 @@
 }
 
 :root {
-  --font-main: "Open Sans", Arial, Sans-serif;
-  --font-heading: "Archivo Black", Arial, Sans-serif;
+  --font-main: "Open sans", Arial, "Sans serif";
+  --font-heading: "Archivo Black", Arial, "Sans serif";
 
   --bg-color: #0d0d11;
   --text-color-primary: #fff;
   --text-color-secundary: #a0a0a0;
-  --acent-color: #6d6dff;
+  --accent-color: #ff6d04;
 }
 
 * {
@@ -52,11 +52,11 @@
 }
 
 .page {
-  background-color: #111;
+  background-color: var(--bg-color);
   position: relative;
   overflow-x: hidden;
-  color: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
+  color: var(--text-color-primary);
+  font-family: var(--font-main);
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
@@ -110,18 +110,18 @@ main {
   max-width: 793px;
   margin-top: 89px;
   margin-bottom: 0;
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 1.08;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .profile__subtitle {
   max-width: 793px;
   margin-top: 15px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -132,12 +132,12 @@ main {
 .profile__description {
   margin-top: 30px;
   max-width: 793px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .profile__image {
@@ -155,18 +155,16 @@ main {
 }
 
 .profile__link {
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.39;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color-primary);
 
   padding-bottom: 5px;
-  background: linear-gradient(to right, #6c2e02, #ff6d04);
+  background: linear-gradient(to right, #6c2e02, var(--accent-color));
 
   background-size: 100% 5px;
   background-position: bottom;
@@ -184,12 +182,12 @@ main {
 }
 
 .skills__title {
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 44px;
-  color: #ffffff;
+  line-height: 1.1;
+  color: var(--text-color-primary);
   justify-content: space-between;
   align-items: center;
 }
@@ -201,7 +199,7 @@ main {
   margin-top: 50px;
 }
 
-.skill__item {
+.skills__item {
   max-width: 50px;
   max-height: 57px;
 }
@@ -215,12 +213,12 @@ main {
 .projects__title {
   margin-top: 0;
   margin-left: 0;
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 1.1;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .project__card {
@@ -265,7 +263,7 @@ main {
 .card__content {
   background: #1c1c1c;
   width: 590px;
-  color: #fff;
+  color: var(--text-color-primary);
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -274,9 +272,7 @@ main {
 
 .card__title {
   padding: 0;
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -287,9 +283,7 @@ main {
   margin-top: 20px;
   padding: 0;
   max-width: 530px;
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -306,14 +300,12 @@ main {
 
 .link__Demo {
   display: flex;
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
-  color: rgb(255, 109, 4);
+  color: var(--accent-color);
   gap: 10px;
   text-decoration: none;
   white-space: nowrap;
@@ -325,15 +317,13 @@ main {
 
 .link__github {
   display: flex;
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color-secundary);
 
   gap: 10px;
   text-decoration: none;
@@ -356,21 +346,19 @@ main {
 }
 
 .footer__title {
-  font-family: "Archivo Black", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 1.1;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .footer__email {
   margin-top: 20px;
-  font-family:
-    "Open Sans" Arial,
-    sans-serif;
+  font-family: var (--font-main);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -378,7 +366,7 @@ main {
   margin-top: 20px;
   text-align: center;
 
-  color: rgb(255, 109, 4);
+  color: var(--accent-color);
 }
 
 .footer__email:hover {
@@ -408,7 +396,6 @@ main {
 
   /* PROFILE */
   .profile {
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 38px;
@@ -453,27 +440,6 @@ main {
     flex-shrink: 0;
   }
 
-  .profile__links {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-  }
-
-  .profile__link {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.39;
-    text-decoration: none;
-    color: #ffffff;
-    padding-bottom: 5px;
-    background: linear-gradient(to right, #6c2e02, #ff6d04);
-    background-size: 100% 5px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-  }
-
   .skills {
     width: 100%;
     max-width: 100%;
@@ -485,7 +451,6 @@ main {
   }
 
   .skills__list {
-    display: flex;
     justify-content: space-between;
     gap: 16px;
     flex-wrap: nowrap;
@@ -506,7 +471,6 @@ main {
   }
 
   .projects .project__card {
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 100%;
@@ -521,25 +485,14 @@ main {
     max-width: 100%;
     box-sizing: border-box;
   }
-
-  .projects .card__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
   .card__image {
     width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
   }
 
   /* FOOTER */
   .footer,
   .footer__content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -569,8 +522,6 @@ main {
 
 @media screen and (max-width: 320px) {
   .profile {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 0 16px;
     gap: 20px;
@@ -605,7 +556,6 @@ main {
   }
 
   .profile__links {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -634,7 +584,6 @@ main {
   }
 
   .skills__list {
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 30px 53px;
@@ -667,10 +616,9 @@ main {
   }
 
   .projects .project__card {
-    display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: var(--bg-color);
     overflow: hidden;
     margin-bottom: 10px;
   }
@@ -680,22 +628,8 @@ main {
     height: auto;
   }
 
-  .projects .card__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-  .card__image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
   .projects .card__content {
     padding: 24px 20px;
-    display: flex;
     flex-direction: column;
     gap: 16px;
   }
@@ -703,14 +637,14 @@ main {
   .projects .card__title {
     font-size: 20px;
     line-height: 1.2;
-    color: #ffffff;
+    color: var(--text-color-primary);
     margin: 0;
   }
 
   .projects .card__description {
     font-size: 15px;
     line-height: 1.4;
-    color: #cccccc;
+    color: var(--text-color-primary);
     margin: 0;
   }
 
@@ -721,7 +655,6 @@ main {
 
   .footer,
   .footer__content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
